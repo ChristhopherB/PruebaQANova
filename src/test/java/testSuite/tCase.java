@@ -17,9 +17,11 @@ public class tCase {
         webDrivers = new ChromeDriver();
         webDrivers.get(url);
     }
+
     @AfterTest
     public void closeTest(){
-        //webDrivers.close();
+
+       webDrivers.close();
     }
 
     @Test
@@ -27,6 +29,7 @@ public class tCase {
         BusquedaGoogle busquedaGoogle = new BusquedaGoogle();
         busquedaGoogle.BusquedaPerro(webDrivers);
     }
+
     @Test
     public void BuscarGato() throws InterruptedException {
         BusquedaGoogle busquedaGoogle = new BusquedaGoogle();
