@@ -17,7 +17,6 @@ public class Google {
    }
 
     public void setInputBuscador(String busqueda) throws InterruptedException {
-        this.inputBuscador = inputBuscador;
         inputBuscador.sendKeys(busqueda);
         Thread.sleep(2000);
         inputBuscador.sendKeys(Keys.ESCAPE);
